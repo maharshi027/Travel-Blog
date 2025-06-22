@@ -5,7 +5,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <title>Panch Prayag Travel Blog</title>
@@ -13,128 +15,89 @@
 </head>
 
 <body>
-    <header>
-        <h1>Panch Prayag Travel Blog</h1>
-        <p>My first unforgettable road trip across the five sacred confluences of Uttarakhand</p>
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <h2 class="logo">My Travel Blog</h2>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#">Social Media ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://github.com/maharshi027" target="_blank">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/harshit-23a6912a8/" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://www.instagram.com/maharshi.027?igsh=eWZrMjk1MGJuand3"
-                                target="_blank">Instagram</a></li>
-                        <li><a href="https://www.youtube.com/@maharshi.027" target="_blank">YouTube</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+   <header>
+    <div class="logo"><img src="./images/logo.png" alt=""></div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Project</a></li>
+        <li><a href="/">Blogs</a></li>
+        <li><a href="/">contact us</a></li>
+      </ul>
     </nav>
-    
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-                <img style="width: 90%; height: 70vh; margin: 2rem auto;" src="./images/corouselKarnaprayag.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img style="width: 90%; height: 70vh; margin: 2rem auto;" src="./images/corouselVishnuprayag.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div  class="carousel-item">
-                <img style="width: 90%; height: 70vh; margin: 2rem auto;" src="./images/CorouselRudraprayag.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+   </header> 
+  <section>
+    <div class="text-container">
+        <h1 class="text-1"> Hi, My name is <span>H</span>arshit,</h1>
+        <h2 class="text-2"><span>W</span>elcome to my <span>B</span>logs</h2>
     </div>
-
-    <section class="intro">
-        <h2>Journey Begins: Haridwar to Rishikesh</h2>
-        <p>I began my journey from Haridwar to Rishikesh by bus. After reaching Rishikesh, we rented a scooty for just
-            ₹500 per day. This was the beginning of an unforgettable road trip to explore the spiritual confluences of
-            the Panch Prayag.</p>
-        <img src="images/rishikesh.jpg" alt="Scooty ride from Rishikesh" />
-    </section>
-
-    <section>
-        <h2>1. Devprayag – The Sacred Union</h2>
-        <p>Devprayag is where the Bhagirathi and Alaknanda rivers meet to form the Ganga. The view was divine with
-            crystal clear waters, ancient temples, and spiritual serenity. The sound of river merging was mesmerizing.
-        </p>
-        <img src="./images/devprayag.jpg" alt="Devprayag confluence" />
-    </section>
-
-    <section>
-        <h2>2. Rudraprayag – Mystic and Majestic</h2>
-        <p>Next, we reached Rudraprayag — where Alaknanda meets Mandakini. The air felt more mystical here, with thick
-            clouds passing over rugged hills. A nearby Shiva temple added to the spiritual aura.</p>
-        <img src="./images/Rudraprayag.jpg" alt="Rudraprayag confluence" />
-    </section>
-
-    <section>
-        <h2>3. Karnaprayag – A Story of Courage</h2>
-        <p>This confluence of Alaknanda and Pindar rivers is said to be where Karna meditated in Mahabharata. The raw
-            beauty of the mountains and the gushing river was inspiring and powerful.</p>
-        <img src="./images/Karnaprayag.jpg" alt="Karnaprayag" />
-    </section>
-
-    <section>
-        <h2>4. Nandaprayag – The Calm Retreat</h2>
-        <p>Here, Alaknanda meets Mandakini. This place had a very calm and meditative vibe. Less crowded, it was perfect
-            for some peaceful reflection and hot tea with locals.</p>
-        <img src="./images/Nandprayag.jpg" alt="Nandaprayag scenery" />
-    </section>
-
-    <section>
-        <h2>5. Vishnuprayag – Ice-Capped Bliss</h2>
-        <p>The final and most beautiful Prayag was Vishnuprayag, where the Dhauliganga joins Alaknanda. For the first
-            time, I witnessed snow-capped mountains, like a white bedsheet laid on nature. At night, we stayed in a cozy
-            hotel, watched shining stars and a clear moon — something Delhi can’t offer.</p>
-        <img src="./images/Vishnuprayag.jpg" alt="Snowy Vishnuprayag mountains" />
-    </section>
-
-<footer class="footer">
-    <div class="footer-content">
-        <p>&copy; 2025 Harshit Kushwaha | Travel Blog on Panch Prayag</p>
-        <div class="footer-social">
-            <a href="https://github.com/maharshi027" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/maharshi027/" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/maharshi.027" target="_blank">Instagram</a>
-            <a href="https://www.youtube.com/@maharshi.027" target="_blank">YouTube</a>
+    <div class="main">
+        <div class="para">
+          <p>My name is Harshit, and this was my first road trip adventure from Rishikesh to the sacred Prayags of Indian culture.
+          Each Prayag, where different rivers meet, led us closer to the divine origin of the Ganga. The journey was filled with
+          breathtaking views, spiritual energy, and unforgettable memories an experience that connected nature, culture, and inner
+          peace.</p>
+        </div>
+        <div class="image-container">
+          <img src="./images/myself.jpg" width="620px" alt="">
         </div>
     </div>
-</footer>
-
-<script>
-    const carousel = document.querySelector('.carousel-slide');
-
-    carousel.addEventListener('mouseover', () => {
-        carousel.style.animationPlayState = 'paused';
-    });
-
-    carousel.addEventListener('mouseout', () => {
-        carousel.style.animationPlayState = 'running';
-    });
-</script>
+  </section>
   
+  <section class="venue" id="venue">
+    <div class="text-container">
+      <h1><span>V</span>enues</h1>
+    </div>
+    <div class="venue-list">
+      <div class="venue-box">
+        <img src="./images/devprayag.jpg" alt="">
+        <div class="venue-info">
+          <h2>Devprayag</h2>
+          <p>Tehri Garhwal, Uttrakhand</p>
+          <button class="btn">More Info</button>
+        </div>
+      </div>
+      <div class="venue-box">
+        <img src="./images/rudraprayag.jpg" alt="">
+        <div class="venue-info">
+          <h2>Rudraprayag</h2>
+          <p>Rudraprayag, Uttrakhand</p>
+          <button class="btn">More Info</button>
+        </div>
+      </div>
+      <div class="venue-box">
+        <img src="./images/karnaprayag.jpg" alt="">
+        <div class="venue-info">
+          <h2>Karnaprayag</h2>
+          <p>Garhwal division, Uttrakhand</p>
+          <button class="btn">More Info</button>
+        </div>
+      </div>
+      <div class="venue-box">
+        <img src="./images/nandprayagWallpaper.jpg" alt="">
+        <div class="venue-info">
+          <h2>Nandprayag</h2>
+          <p>Chamoli distric, Uttrakhand</p>
+          <button class="btn">More Info</button>
+        </div>
+      </div>
+      <div class="venue-box">
+        <img src="./images/Vishnuprayag.jpg" alt="">
+        <div class="venue-info">
+          <h2>Vishnuprayag</h2>
+          <p>Chamoli distric, Utttrakhand</p>
+          <button class="btn">More Info</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
+  
 </body>
 
 </html>

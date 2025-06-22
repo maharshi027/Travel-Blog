@@ -1,142 +1,230 @@
-/* Save this as style.css */
-body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #eef2f3, #8e9eab);
-    color: #222;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background-color: aquamarine;
 }
 
 header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
-/* Navbar Styling */
-.navbar {
-    background-color: #2c3e50;
-    color: white;
-    padding: 1rem 2rem;
+    max-width: 100vw;
+    height: 10vh;
+    background-color: aqua;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    /* space between logo and nav */
+    padding: 0 5%;
+    /* spacing on both sides */
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    /* maintain aspect ratio */
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
     align-items: center;
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.logo {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-.nav-links {
+nav ul li {
     list-style: none;
-    display: flex;
-    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+    /* or any accent color you like */
+}
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    position: relative;
+body {
+    background-color:#fbeaff;
 }
 
-.nav-links a:hover {
-    color: #f9d923;
+header {
+    max-width: 100vw;
+    height: 10vh;
+    background-color:#c5aa6a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* space between logo and nav */
+    padding: 0 5%; /* spacing on both sides */
 }
 
-/* Dropdown Menu */
-.dropdown {
-    position: relative;
+.logo img {
+    width: 120px;
+    height: auto; /* maintain aspect ratio */
 }
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 2rem;
-    left: 0;
-    background-color: #34495e;
-    padding: 0.5rem;
-    border-radius: 8px;
+nav ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+nav ul li {
     list-style: none;
 }
 
-.dropdown-menu li a {
-    display: block;
-    padding: 0.5rem 1rem;
-    white-space: nowrap;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-h2 {
-    color: #2c3e50;
-    margin-top: 2rem;
-}
-
-section {
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.9);
-    margin: 1rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section img {
-    width: 450px;
-    aspect-ratio: 1;
-    border-radius: 12px;
-    margin-top: 1rem;
-}
-
-footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #2c3e50;
-    color: #f9f9f9;
-    font-size: 0.9rem;
-}
-/* Footer Styling */
-.footer {
-    background-color: #2c3e50;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
-
-.footer-social a {
-    margin: 0 0.5rem;
-    color: #f0f0f0;
+nav ul li a {
     text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-.footer-social a:hover {
-    color: #f9d923;
+nav ul li a:hover {
+    color: #007bff; /* or any accent color you like */
+}
+nav ul li a:active {
+    color: #007bff;
+    font-weight: 700;
+}
+span{
+    color: #FFAC1C;
+}
+.text-container{
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+}
+ .text-2 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    /* border-right: 2px solid #333; */
+    animation: typing 5s steps(18, end), cursor 1s step-end infinite alternate;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
+@keyframes typing {
+    from {
+        width: 0;
     }
 
-    section {
-        padding: 1rem;
+    to {
+        width: 100%;
     }
 }
+
+@keyframes cursor {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #333;
+    }
+}
+.main{
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+    align-items: center;
+}
+.para{
+    max-width: 30vw;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.6;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    & p {font-family: 'Lora', serif;
+}
+}
+.image-container{
+   /* border-radius: 10px; */
+   /* position: relative; */
+    /* height: 100vh; */
+    overflow: hidden;
+    & img{
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    border-radius: 10px;
+        /* adjust as needed */
+        transform: translateX(100%);
+        opacity: 0;
+        animation: slideInRight 2s ease-out forwards;
+}
+}
+@keyframes slideInRight {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    } }
+
+    /* ------------------vernue-------------------- */
+
+        .venue .venue-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    
+        .venue .venue-list .venue-box {
+            flex: 1 1 10rem;
+            margin: 1rem;
+            position: relative;
+            border-radius: .6rem;
+            overflow: hidden;
+            height: 20rem;
+        }
+    
+        .venue .venue-list .venue-box img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        .venue .venue-list .venue-box .venue-info {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            color: var(--clr4);
+            background: rgba(46, 39, 40, 0.5);
+            transform: scale(1.3);
+            opacity: 0;
+            transition: 1s ease;
+        }
+    
+        .venue .venue-list .venue-box:hover .venue-info {
+            transform: scale(1);
+            opacity: 1;
+        }
+    
+        .venue .venue-list .venue-box .venue-info h2 {
+            font-size: 3rem;
+            letter-spacing: .1rem;
+            color: var(--clr3);
+        }
+    
+        .venue .venue-list .venue-box .venue-info p {
+            font-size: 2rem;
+            letter-spacing: .1rem;
+            color: var(--clr3);   }
